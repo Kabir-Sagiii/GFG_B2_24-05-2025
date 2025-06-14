@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .gridC {
+        width: 700px;
+        height: 500px;
+        border: 2px solid blue;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridC">
+      <div style="background-color: lightgreen">gridItem 1</div>
+      <div style="background-color: lightcoral">gridItem 2</div>
+      <div style="background-color: lightgray">gridItem 3</div>
+      <div style="background-color: rgb(144, 164, 238)">gridItem 4</div>
+      <div style="background-color: rgb(219, 240, 128)">gridItem 5</div>
+      <div style="background-color: rgb(125, 64, 64)">gridItem 6</div>
+    </div>
+  </body>
+</html>
