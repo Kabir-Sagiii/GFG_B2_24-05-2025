@@ -1,0 +1,56 @@
+.card {
+  width: 230px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    width: 270px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px blue;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .card {
+    width: 270px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    width: 270px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px green;
+  }
+  #yash {
+    display: none;
+  }
+}

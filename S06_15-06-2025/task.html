@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 800px;
+        height: 500px;
+        margin: 50px auto;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 10px;
+      }
+
+      .container div {
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #header {
+        grid-column: 1/6;
+        grid-row: 1/2;
+      }
+      #nav {
+        grid-column: 1/2;
+        grid-row: 2/6;
+      }
+      #articles {
+        grid-column: 2/5;
+        grid-row: 2/5;
+      }
+      #ads {
+        grid-column: 5/6;
+        grid-row: 2/5;
+      }
+      #footer {
+        grid-column: 2/6;
+        grid-row: 5/6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="header">Header</div>
+      <div id="nav">Nav</div>
+      <div id="articles">Article</div>
+      <div id="ads">Ads</div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
