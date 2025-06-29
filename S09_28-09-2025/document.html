@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM concept</title>
+    <script>
+      function changeContent() {
+        //access the h2 dom element
+        var h2_DomElement = document.querySelector("h2");
+
+        //change the content of h2
+        h2_DomElement.innerText = "DOM Manipulation";
+
+        //change the styles of h2
+        h2_DomElement.style.color = "red";
+        h2_DomElement.style.backgroundColor = "black";
+        h2_DomElement.style.padding = "20px";
+        h2_DomElement.style.borderTopLeftRadius = "15px";
+
+        var pDOMElement = document.querySelector("p");
+
+        pDOMElement.innerText = "Javascript is much more funny then we think";
+
+        pDOMElement.style.color = "green";
+
+        // console.log(Object.keys(h2_DomElement));
+        // var count = 0;
+        // for (var key in window) {
+        //   console.log(key);
+        //   count++;
+        // }
+        // console.log(count);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <h2>Document Object Model</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex officia
+        repellendus non numquam? Cum et quia vitae numquam ut officia eos
+        excepturi voluptatibus earum temporibus, soluta in distinctio ab
+        expedita eum amet consequatur adipisci ipsa sint iusto ratione? Esse
+        minima unde corporis culpa eveniet assumenda maiores consequatur, odio
+        voluptatum quos pariatur tempora non quae, incidunt laborum ipsa nobis
+        quaerat perspiciatis nam sequi corrupti quidem dolorum voluptatibus
+        cumque? Autem, provident illum esse saepe delectus ullam, laudantium sed
+        odio debitis cum molestias, sit reprehenderit maxime nisi nulla
+        doloremque unde at. Laudantium sit dignissimos officiis exercitationem
+        excepturi esse autem mollitia rem veritatis. Maiores?
+      </p>
+      <button onclick="changeContent()">Explore More</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createImage() {
+        //create imageDomElement
+        var imageDomElement = document.createElement("img");
+        //added the image
+        imageDomElement.src =
+          "https://miro.medium.com/v2/resize:fit:1000/1*1u2p917cvlyP6SuHcq3t0Q.jpeg";
+        imageDomElement.width = "500";
+        imageDomElement.height = "300";
+
+        var div = document.querySelector("div");
+        div.appendChild(imageDomElement);
+      }
+
+      function removeImage() {
+        var imageDomElement = document.querySelector("img");
+        imageDomElement.remove();
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; margin-top: 50px">
+      <h1>Add / Remove Image</h1>
+      <button onclick="createImage()">Add</button>
+      <button onclick="removeImage()">Remove</button><br /><br />
+    </div>
+  </body>
+</html>

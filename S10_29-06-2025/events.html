@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function addBg() {
+        setTimeout(() => {
+          document.querySelector("body").style.backgroundColor = "green";
+          document.querySelector("img").style.display = "inline";
+          document.querySelector("img").style.transform = "rotate(90deg)";
+          //   document.querySelector("img").style.transitionProperty = "transform";
+          //   document.querySelector("img").style.transitionDuration = "5s";
+        }, 4000);
+
+        setTimeout(() => {
+          document.querySelector("body").style.backgroundColor = "white";
+        }, 8000);
+      }
+      function changeBg() {
+        var input = document.querySelector("input");
+        input.style.backgroundColor = "black";
+        input.style.color = "white";
+      }
+      function changeToRed() {
+        var input = document.querySelector("input");
+        input.style.backgroundColor = "red";
+      }
+    </script>
+  </head>
+  <body onload="addBg()">
+    <h2>Event in JS</h2>
+
+    <input type="text" onmouseenter="changeToRed()" onkeypress="changeBg()" />
+    <br /><br />
+    <img
+      style="display: none"
+      src="https://tse3.mm.bing.net/th/id/OIP.ox5krs7DqaUgFKW1cjGLHQHaEi?rs=1&pid=ImgDetMain&o=7&rm=3"
+      width="300"
+      height="300"
+    /><br />
+  </body>
+</html>
