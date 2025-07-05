@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      //Section
+      var section = React.createElement("section", null, [
+        React.createElement(
+          "div",
+          null,
+          React.createElement("img", {
+            width: "300",
+            height: "300",
+            src: "https://i.pinimg.com/originals/90/c0/51/90c051810494297069df2b6b9a450c15.jpg",
+          })
+        ),
+        React.createElement("h2", null, "Library Concept"),
+        React.createElement("p", null, "------------------------"),
+      ]);
+
+      ReactDOM.render(section, document.getElementById("root"));
+    </script>
+  </body>
+</html>

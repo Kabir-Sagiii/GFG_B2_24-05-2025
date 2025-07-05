@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function main() {
+        createButton();
+        createButton();
+        createButton();
+        createButton();
+        createButton();
+      }
+      function createButton() {
+        var button_DomElement = document.createElement("button");
+        button_DomElement.innerText = "Javascript Button";
+        document.getElementById("root").appendChild(button_DomElement);
+
+        var ol = document.createElement("ol");
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+
+        li1.innerText = "html";
+        li2.innerText = "css";
+        li3.innerText = "js";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+
+        document.getElementById("root").appendChild(ol);
+      }
+    </script>
+  </head>
+
+  <body onload="main()">
+    <div id="root"></div>
+  </body>
+</html>

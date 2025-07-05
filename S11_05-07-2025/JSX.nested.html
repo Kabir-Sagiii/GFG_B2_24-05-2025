@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <style>
+      p {
+        color: red;
+      }
+    </style> -->
+    <link rel="stylesheet" href="nested.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var divStyles = {
+        boxShadow: "0 0 10px blue",
+        width: "500px",
+        padding: "20px",
+      };
+
+      var container = (
+        <div style={divStyles}>
+          <h2 style={{ color: "green" }}> Majha Aagaya</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sint
+            magnam dicta assumenda eaque aliquid porro, dolores ipsa voluptatum
+            labore quidem mollitia deserunt corrupti, fugit explicabo laudantium
+            eius consectetur incidunt quam temporibus voluptatibus unde tenetur
+            veniam facilis. Mollitia sit veniam accusamus asperiores! Eos
+            debitis odio temporibus itaque non quae est.{" "}
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(container, document.getElementById("root"));
+    </script>
+  </body>
+</html>
