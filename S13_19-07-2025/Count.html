@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var count = 0;
+      var mycount = 0;
+      function incCount() {
+        var h2Dom = document.querySelector("h2");
+
+        // for (var i in h2Dom.style) {
+        //   console.log(i);
+        //   mycount++;
+        // }
+        // console.log(mycount);
+
+        h2Dom.innerText = `Count Value is ${++count}`;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Count Value is : 0</h2>
+    <button onclick="incCount()">incCount</button>
+  </body>
+</html>

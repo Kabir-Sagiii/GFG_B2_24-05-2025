@@ -1,0 +1,9 @@
+#container {
+  padding: 20px;
+  width: 800px;
+  box-shadow: 0 0 10px black;
+  margin: 20px;
+}
+#title {
+  color: blue;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./04_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateCard() {
+        return (
+          <div className="card">
+            <img
+              src="https://techcloudltd.com/wp-content/uploads/2024/06/male-professional-headshots-1024x638.webp"
+              alt=""
+              width="100%"
+              height="230"
+            />
+            <h3> Viraj Singh </h3>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div className="app">
+            <CreateCard />
+            <CreateCard />
+            <CreateCard />
+            <CreateCard> </CreateCard>
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

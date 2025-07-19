@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyList(props) {
+        //props = {listItem1:"React JS",listItem2:"Node JS"}
+        return (
+          <ol>
+            <li>{props.listItem1}</li>
+            <li>{props.listItem2}</li>
+            <li>{props.listItem3}</li>
+          </ol>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <MyList
+              listItem1={"React JS"}
+              listItem2={"NodeJS"}
+              listItem3={"MongoDB"}
+            />
+            <MyList listItem1={"HTML"} listItem2={"CSS"} listItem3={"JS"} />
+
+            <MyList listItem1={"AWS"} listItem2={"AZURE"} listItem3={"GCP"} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

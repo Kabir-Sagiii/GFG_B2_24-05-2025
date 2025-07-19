@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./08_Home.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //   function Home() { //230 lines
+      //     return (
+      //       <div style={{ height: "100%" }}>
+      //         <header>50</header>
+      //         <main>100</main>
+      //<Section > </section>
+      //         <footer>70</footer>
+      //       </div>
+      //     );
+      //   }
+
+      function Header() {
+        //50
+        return <header> </header>;
+      }
+
+      function Main() {
+        //100
+        return <main> </main>;
+      }
+
+      function Section() {
+        return <div> </div>;
+      }
+
+      function Footer() {
+        //70
+        return <footer> </footer>;
+      }
+
+      function Home() {
+        return (
+          <div>
+            <Header />
+            <Main />
+            <Section />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Home />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

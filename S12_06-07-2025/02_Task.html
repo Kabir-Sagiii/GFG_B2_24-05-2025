@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./01_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createContainer(techName) {
+        return (
+          <div id="container">
+            <h2 id="title"> {techName} </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              sequi obcaecati cumque reprehenderit dolorum at expedita,
+              perspiciatis magni voluptatum est, quaerat exercitationem
+              eligendi. Eum saepe voluptatibus obcaecati ullam in illo sint
+              exercitationem quisquam earum error rerum deserunt excepturi
+              provident est libero culpa impedit, similique debitis, ipsum
+              facere aliquid voluptas molestias quae minus. Voluptatum
+              voluptatibus, itaque quis aliquam voluptatem nemo ex eius
+              assumenda quos hic nisi consequatur beatae, perferendis distinctio
+              veritatis.
+            </p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(
+        [
+          createContainer("HTML"),
+          createContainer("CSS"),
+          createContainer("JS"),
+        ],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

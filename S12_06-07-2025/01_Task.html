@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./01_Task.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var container = (
+        <div id="container">
+          <h2 id="title">HTML Information</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            maiores quam saepe magnam nesciunt vel, quisquam nihil minima
+            aspernatur neque adipisci earum iure laudantium cum nam laboriosam
+            libero eum dignissimos ea animi rem, id velit ex? Provident numquam
+            debitis eum suscipit sapiente id qui asperiores dignissimos ex
+            saepe. Excepturi nesciunt at deleniti, minus perspiciatis
+            accusantium doloremque incidunt sed architecto reprehenderit libero,
+            inventore esse quas dicta cum autem maiores porro voluptatem iusto
+            animi sequi! Provident, accusamus. Et, nostrum magnam quas
+            voluptatem cumque, sunt sit asperiores, optio quasi voluptate
+            consequuntur eum error odio minima molestiae animi officia.
+            Repellendus placeat fugiat excepturi cumque.{" "}
+          </p>
+        </div>
+      );
+
+      ReactDOM.render(
+        [container, container, container, container],
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
