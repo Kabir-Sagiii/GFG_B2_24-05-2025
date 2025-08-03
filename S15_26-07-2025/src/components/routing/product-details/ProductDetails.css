@@ -1,0 +1,28 @@
+.product-details {
+  width: 1000px;
+  height: 430px;
+  box-shadow: 0 0 10px black;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.product-content {
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+.product-content dd {
+  margin-bottom: 20px;
+  margin-top: 3px;
+}
+.product-content dt {
+  color: lightgreen;
+}
+.product-content button {
+  padding: 10px 20px;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}

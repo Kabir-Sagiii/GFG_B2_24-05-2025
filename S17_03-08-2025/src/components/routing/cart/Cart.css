@@ -1,0 +1,36 @@
+.cartContainer {
+  width: 1200px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  gap: 20px;
+}
+.cart-section {
+  display: grid;
+  grid-template-rows: 70px;
+}
+.cart-row,
+.cart-row-data {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.cart-row-data div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-row div {
+  background-color: black;
+  color: yellow;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+}
+.order-summary {
+  background-color: black;
+  height: 250px;
+}
